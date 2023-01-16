@@ -95,6 +95,8 @@ p{
 
 
 .popup-wrapper{
+
+    background: rgba(0, 0, 0, .5);
     position: fixed;
     top: 0;
     left: 0;
@@ -103,13 +105,13 @@ p{
 }
 
 .popup {
-    display: none;
     font-family: 'Inter', sans-serif;
     text-align: center;
     width: 100%;
     max-width: 300px;
     margin: 10% auto;
     padding: 20px;
+    background: linear-gradient(0deg, #000000 7.46%, rgba(255, 255, 255, 0) 100%);
     position: relative;
     border-radius: 12px;
 }
@@ -135,9 +137,10 @@ p{
 }
 
 h1{
+    font-size: 25px;
     color: whitesmoke
 }
 
-dialog {
-    border: 0;
+dialog{
+ border: 0;
 }

@@ -1,6 +1,7 @@
 // https://akabab.github.io/starwars-api/api/all.json
 
 let conteiner = document.querySelector('#container');
+
 //  FAZ SOMENTE A CONSTULTA NA API
 async function fetchApiData() {
     const starWars = await fetch('https://akabab.github.io/starwars-api/api/all.json')
@@ -18,6 +19,8 @@ const starRender = async ()=>{
         let imagem = document.createElement('img')
         let paragrafo= document.createElement('p')
 
+
+
         divIn.className='box'
         imagem.className='img-box'
 
@@ -26,7 +29,7 @@ const starRender = async ()=>{
         divIn.addEventListener('click',(event) => {
             // @ PEGA O ID DA FOTO PARA FAZER NOVA BUSCA
             selectId = event.target.getAttribute('id')
-            // console.log(selectId)
+            console.log(selectId)
         })
 
         // @ ADICIONA O ID DO PERSONAGEM NA DIV
@@ -40,18 +43,4 @@ const starRender = async ()=>{
 
     })
 } 
-
 starRender()
-
-const button = document.querySelector("button");
-const modal = document.querySelector("dialog");
-const div = document.querySelector("div .popup-close");
-
-
-button.onclick = function () {
-    modal.show()
-}
-
-div.onclick = function () {
-    modal.close()
-}
