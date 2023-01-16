@@ -20,9 +20,24 @@ const starRender = async ()=>{
         let paragrafo= document.createElement('p')
 
 
+        let modal = document.querySelector("dialog")
+        let section = document.querySelector("section .popup-close")
+
+
 
         divIn.className='box'
         imagem.className='img-box'
+        paragrafo.className = "person"
+
+        
+        divIn.onclick = function () {
+            modal.show()
+
+        }
+        section.onclick = function () {
+            modal.close()
+        }
+
 
         
         // @ EVENTO NA DIV

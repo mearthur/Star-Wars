@@ -17,7 +17,7 @@ div{
 }
 
 
-p{
+.person{
     display: flex;
     text-align: center;
     position: absolute;
@@ -40,7 +40,7 @@ p{
 }
 
 .logo>img{
-    z-index: 2;
+    z-index: 1;
 }
 
 .logo{
@@ -66,9 +66,7 @@ p{
     border: none;
     cursor: pointer;
 }
-.esconder{
-    display: none;
-}
+
 
 .img-box{
     z-index: -1;
@@ -95,19 +93,21 @@ p{
 
 
 .popup-wrapper{
-
     background: rgba(0, 0, 0, .5);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 20;
 }
 
 .popup {
     font-family: 'Inter', sans-serif;
     text-align: center;
     width: 100%;
+    height: 100%;
+    max-height: 300px;
     max-width: 300px;
     margin: 10% auto;
     padding: 20px;
@@ -122,14 +122,15 @@ p{
     top: 5px;
     right: 10px;
     cursor: pointer;
+    color: whitesmoke;
 }
 
-p{
-    display: flex;
+.popup-paragrafo{
     text-align: center;
     justify-content: center;
     font-family: 'Inter', sans-serif;
     font-size: 25px;
+    margin-top: 23px;
     background: linear-gradient(182deg, #53FF00 1.74%, #FFFFFF 227.97%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
