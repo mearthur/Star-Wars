@@ -24,12 +24,11 @@ const starRender = async ()=>{
         let section = document.querySelector("section .popup-close")
 
 
-
         divIn.className='box'
         imagem.className='img-box'
         paragrafo.className = "person"
 
-        
+
         divIn.onclick = function () {
             modal.show()
 
@@ -37,8 +36,6 @@ const starRender = async ()=>{
         section.onclick = function () {
             modal.close()
         }
-
-
         
         // @ EVENTO NA DIV
         divIn.addEventListener('click',(event) => {
@@ -59,3 +56,4 @@ const starRender = async ()=>{
     })
 } 
 starRender()
+
