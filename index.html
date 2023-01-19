@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8" />
@@ -17,6 +17,9 @@
         <img src="./IMG/logo.svg" alt="" width="100%" />
         <div class="filter"></div>
     </header>
+    <form>
+        <input type="text" id="filter" placeholder="Digite...">
+    </form>
     <div class="container" id="container">
         <!-- <button class="box">
             <img src="" alt="" class="img-box">
@@ -27,16 +30,15 @@
                 <section class="popup">
                     <section class="popup-close">x</section>
                     <section class="popup-content">
-                        <h1>NAME</h1>
-                        <p class="popup-paragrafo">HEIGTH: </p>
-                        <p class="popup-paragrafo">MASS: </p>
-                        <p class="popup-paragrafo">SPECIES: </p>
-                        <p class="popup-paragrafo">GENDER: </p>
+                        <h1><span id="name"></span></h1>
+                        <p class="popup-paragrafo">HEIGTH:  <span id="height"></span></p>
+                        <p class="popup-paragrafo">MASS:  <span id="mass"></span></p>
+                        <p class="popup-paragrafo">SPECIES:  <span id="species"></span></p>
+                        <p class="popup-paragrafo">GENDER:  <span id="gender"></span></p>
                     </section>
                 </section>
             </section>
         </dialog>
         <script src="./script.js"></script>
 </body>
-
 </html>
